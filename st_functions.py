@@ -35,7 +35,8 @@ def st_button(icon, url, label, iconsize):
                 </svg>
                 {label}
             </a>
-        </p>''' 
+        </p>'''
+
     elif icon == 'medium':
         button_code = f'''
         <p>
@@ -70,6 +71,24 @@ def st_button(icon, url, label, iconsize):
         button_code = f'''
         <p>
             <a href={url} class="btn btn-outline-primary btn-lg btn-block" type="button" aria-pressed="true">
+                {label}
+            </a>
+        </p>'''
+    elif icon == 'cv':
+        button_code = f'''
+        <p>
+            <a href={url} download='mohamed_mahmoud_cv.pdf' class="btn btn-outline-primary btn-lg btn-block" type="button" aria-pressed="true">
+                <svg width="{iconsize}" height="{iconsize}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="bi bi-cv-fill" viewBox="0 0 16 16">
+                <path d="M3 24h19v-23h-1v22h-18v1zm17-24h-18v22h18v-22zm-1 1h-16v20h16v-20zm-2 16h-12v1h12v-1zm0-3h-12v1h12v-1zm0-3h-12v1h12v-1zm-7.348-3.863l.948.3c-.145.529-.387.922-.725 1.178-.338.257-.767.385-1.287.385-.643 0-1.171-.22-1.585-.659-.414-.439-.621-1.04-.621-1.802 0-.806.208-1.432.624-1.878.416-.446.963-.669 1.642-.669.592 0 1.073.175 1.443.525.221.207.386.505.496.892l-.968.231c-.057-.251-.177-.449-.358-.594-.182-.146-.403-.218-.663-.218-.359 0-.65.129-.874.386-.223.258-.335.675-.335 1.252 0 .613.11 1.049.331 1.308.22.26.506.39.858.39.26 0 .484-.082.671-.248.187-.165.322-.425.403-.779zm3.023 1.78l-1.731-4.842h1.06l1.226 3.584 1.186-3.584h1.037l-1.734 4.842h-1.044z"/></svg>
+                {label}
+            </a>
+        </p>'''
+    elif icon == 'facebook':
+        button_code = f'''
+        <p>
+            <a href={url} class="btn btn-outline-primary btn-lg btn-block" type="button" aria-pressed="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="{iconsize}" height="{iconsize}" viewBox="0 0 24 24" fill=" currentColor" class="bi bi-facebook-fill" viewBox="0 0 16 16">
+                <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
                 {label}
             </a>
         </p>'''
