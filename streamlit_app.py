@@ -21,10 +21,10 @@ cv="/mohamed_mahmoud_cv.pdf"
 
 st_button('youtube', 'https://youtube.com/@thesnak', 'My YouTube channel', icon_size)
 st_button('youtube', 'https://youtube.com/@aitronix8705', 'Aitronix YouTube channel', icon_size)
-st_button('Github', 'https://github.com/thesnak', 'My Project', icon_size)
 st_button('linkedin', 'https://www.linkedin.com/in/mohamed-thesnak/', 'Follow me on LinkedIn', icon_size)
 st_button('facebook', 'https://www.facebook.com/mohamed.thesnak.official1/', 'Follow me on Facebook', icon_size)
 st_button('medium', 'https://medium.com/@thesnak', 'Read my Blogs', icon_size)
+st_button('github', 'https://github.com/thesnak', 'My Project', icon_size)
 
 with open(cv[1:], "rb") as pdf_file:
     PDFbyte = pdf_file.read()
