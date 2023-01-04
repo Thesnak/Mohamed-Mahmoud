@@ -1,9 +1,9 @@
 import streamlit as st
 from st_functions import st_button, load_css
 from PIL import Image
+st.set_page_config(page_title="Mohamed Mahmoud portfolio")
 
 load_css()
-st.markdown('<title>Mohamed Mahmoud Portfolio</title>', unsafe_allow_html=True)
 st.write("[![Watch](https://komarev.com/ghpvc/?username=thesnak&label=Profile%20views&color=0e75b6&style=flat)](https://gitHub.com/thesnak)")
 
 col1, col2, col3 = st.columns(3)
