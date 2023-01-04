@@ -1,7 +1,7 @@
 import streamlit as st
 from st_functions import st_button, load_css
 from PIL import Image
-#st.set_page_config(page_title="Mohamed Mahmoud portfolio")
+st.set_page_config(page_title="Mohamed Mahmoud portfolio",layout="centered")
 load_css()
 st.write("[![Watch](https://komarev.com/ghpvc/?username=thesnak&label=Profile%20views&color=0e75b6&style=flat)](https://gitHub.com/thesnak)")
 
